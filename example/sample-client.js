@@ -40,8 +40,8 @@ hawkBitClient
 	// In this case, depending on the type (Configuration Module VS Software Module), it will take action.
 	.on("artifactFound",function(artifact,chunk) {
 
-	    var name = chunk.name;
-	    var type = chunk.part;
+		var name = chunk.name;
+		var type = chunk.part;
 
 		console.log('artifactFound chunck : ' + name + " / " + type);
 
