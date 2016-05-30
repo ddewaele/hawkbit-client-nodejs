@@ -8,7 +8,7 @@ var hawkBitClient = require('../lib/hawkBitClient');
 hawkBitClient
 	.hostname("localhost")
 	.port("8080")
-	.target("controller2")
+	.target("Omega1")
 	.cronDefinition('* * * * * *')
 	.poll(
 
