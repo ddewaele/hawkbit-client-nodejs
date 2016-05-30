@@ -4,7 +4,7 @@ Very early state nodejs client library for [hawkbit](https://github.com/eclipse/
 
 # How ?
 
-Define a hawkbitTarget, and provide 
+Define a hawkbitClient, and provide 
 
 - hostname (of the hawkbit server)
 - port (of the hawkbit server)
