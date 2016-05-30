@@ -4,23 +4,16 @@ Very early state nodejs client library for hawkbit, implementing the [Hawkbit DD
 
 # How ?
 
-Define a hawkbitTarget, by specifying the controller name.
+Define a hawkbitTarget, and provide 
+
+- hostname (of the hawkbit server)
+- port (of the hawkbit server)
+- target (name of the target / thing / device as dfined in hawkbit)
+
 
 ```javascript
 var hawkBitTarget = require('./hawkBitTarget');
-
-hawkBitTarget.name("controller1");
-```
-
-Optionally also specify 
-
-- hostname
-- port
-
-for it to connect to the Hawkserver instance (default = localhost:8080)
-
-```javascript
-hawkBitTarget.hostname("test-server").port("8888").name("controller1")
+hawkBitTarget.hostname("test-server").port("8888").target("controller1")
 ```
 
 The `poll` method will start a scheduler that will poll the Hawkbit server. The hawkbitTarget will receive the following events
