@@ -9,11 +9,15 @@ Define a hawkbitTarget, and provide
 - hostname (of the hawkbit server)
 - port (of the hawkbit server)
 - target (name of the target / thing / device as dfined in hawkbit)
-
+- cronDefinition (to determine the polling rate)
 
 ```javascript
-var hawkBitTarget = require('./hawkBitTarget');
-hawkBitTarget.hostname("test-server").port("8888").target("controller1")
+var hawkBitClient = require('./lib/hawkBitClient');
+hawkBitClient
+	.hostname("test-server")
+	.port("8085")
+	.target("controller1")
+	.cronDefinition('1 * * * * *')
 ```
 
 The `poll` method will start a scheduler that will poll the Hawkbit server. The hawkbitTarget will receive the following events

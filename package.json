@@ -7,18 +7,17 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Davy De Waele <ddewaele@gmail.com> (https://github.com/ddewaele/)",
-  "bugs" : {
-    "url" : "http://github.com/ddewaele/hawkbit-client-nodejs/issues"
+  "bugs": {
+    "url": "http://github.com/ddewaele/hawkbit-client-nodejs/issues"
   },
   "repository": {
     "type": "git",
     "url": "http://github.com/ddewaele/hawkbit-client-nodejs.git"
-  },  
+  },
   "license": "ISC",
   "dependencies": {
-    "babel": "^6.5.2",
+    "cron": "^1.1.0",
     "jsonpath": "^0.2.3",
-    "node-schedule": "^1.1.0",
     "request": "^2.72.0",
     "restler": "^3.4.0"
   }

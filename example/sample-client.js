@@ -1,6 +1,11 @@
 var hawkBitClient = require('../lib/hawkBitClient');
 
-hawkBitClient.hostname("localhost").port("8080").target("controller1").poll(
+hawkBitClient
+	.hostname("localhost")
+	.port("8080")
+	.target("controller1")
+	.cronDefinition('* * * * * *')
+	.poll(
 
 	// A deploymentBase is available.
 	// This also means that chunks / artifacts will be processed (chunkFound) .
