@@ -33,6 +33,12 @@ The hawkbitClient will then receive the following events :
 
 
 
+The following flow can be easily implemented :
+
+![](https://dl.dropboxusercontent.com/u/13246619/hawkbit/Hawkbit%20DDI%20happy%20flow.png)
+
+Code :
+
 ```javascript
 hawkBitClient.hostname("localhost").port("8080").target("controller1").poll(
 
