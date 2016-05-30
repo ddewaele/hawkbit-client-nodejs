@@ -1,6 +1,6 @@
 # What ?
 
-Very early state nodejs client library for hawkbit, implementing the [Hawkbit DDI API](https://github.com/eclipse/hawkbit/wiki/Direct-Device-Integration-API). (Direct Device Integration)
+Very early state nodejs client library for [hawkbit](https://github.com/eclipse/hawkbit), implementing the [Hawkbit DDI API](https://github.com/eclipse/hawkbit/wiki/Direct-Device-Integration-API). (Direct Device Integration)
 
 # How ?
 
