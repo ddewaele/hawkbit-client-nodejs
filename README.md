@@ -20,14 +20,16 @@ hawkBitClient
 	.cronDefinition('1 * * * * *')
 ```
 
-The `poll` method will start a scheduler that will poll the Hawkbit server. The hawkbitTarget will receive the following events
+As soon as the `poll` method is invoked, the Hawkbit server will be contacted according to the cronDefinition.
 
-- deploymentBase
-- chunkFound
-- cancelAction
-- feedbackScheduled
-- feedbackProceeding
-- feedbackClosed
+The hawkbitClient will then receive the following events :
+
+- deploymentBase (a new distribution is ready)
+- chunkFound (a chunk was found in the distribution)
+- cancelAction (a cancel action was triggered from the hawkbit server)
+- feedbackScheduled (the distribution reached the scheduled state)
+- feedbackProceeding (the distribution reached the proceeding state)
+- feedbackClosed (the distribution reached the closed state)
 
 
 
